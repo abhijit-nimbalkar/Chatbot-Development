@@ -17,11 +17,11 @@ def sms_reply():
     print(request.values)
     print('{} has sent a message saying {} from {}'.format(str(from_number), str(message_body), str(country)))
     service = watson_developer_cloud.AssistantV1(
-    username = 'your_username', # replace with service username
-    password = 'your_service_password', # replace with service password
+    username = 'apikey', # replace with service username
+    password = 'ak8Gz1NVQWZWX8qbbDK9pYT9EYLCnZrXXoI944qDQUOG', # replace with service password
     version = '2018-02-16'
           )
-    workspace_id = 'your_workspace_id'
+    workspace_id = '4abe462d-03d4-4fd3-9f5a-9f8ee11ad00a'
     user_input = str(message_body)
     context = {}
     while True:
